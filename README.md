@@ -1,36 +1,92 @@
-# Deep learning course
+# Deep learning course @ fall'17
+Fork of Lempitsky DL for HSE master students.
 
-This repo follows Fall2018 track for HSE students. _For previous iteration with complete materials visit the [master branch](https://github.com/yandexdataschool/Practical_DL/tree/master)._
+Lecture and seminar materials for each week are in ./week* folders
 
-Lecture and seminar materials for each week are in ./week* folders. Homeworks are in ./homework* folders.
+__Attention!__ This is a new iteration of on-campus deeplearning course. For full course materials '2016, go to [this branch](https://github.com/yandexdataschool/practical_deeplearning/tree/last_iteration)
+
 
 # General info
-* Create cloud jupyter session from this repo - [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/yandexdataschool/Practical_DL/fall18)
-* Telegram [chat room](https://t.me/joinchat/CDFcMRAejIXa650BD7-mbA) (russian).
-* YSDA deadlines & admin stuff can be found at the YSDA course wiki (ysda students only).
-* Any technical issues, ideas, bugs in course materials, contribution ideas - add an [issue](https://github.com/yandexdataschool/practical_dl/issues)
-* Grading, lateness penalties and other formalities - see [this page](https://github.com/yandexdataschool/Practical_DL/wiki/Homeworks-and-grading-(HSE))
+* Create cloud jupyter with repo https://beta.mybinder.org/v2/gh/yandexdataschool/Practical_DL/fall17
+* Lecture slides are stored in [this folder](https://yadi.sk/d/ExaKWAFN3MjPsd) (odp, pdf). You can also view slides from each week's page.
+* Any technical issues, ideas, bugs in course materials, contribution ideas - add an [issue](https://github.com/yandexdataschool/HSE_deeplearning/issues)
 
+# Enrollment guide
+HSE classes are happening on wednesdays, 18-10 till 21-00. [room number TBA]
+
+Everyone who wants to attend the course ping jheuristic@yandex-team.ru
+
+1. Bookmark repo https://github.com/yandexdataschool/practical_DL
+2. Join telegram chat https://t.me/dl_hse_fall17
+3. (only HSE students) Enroll to anytask.org/course/227 with invite code __7pp6jP3__
+4. Join piazza https://piazza.com/cs_hse/fall2017/dl101/home with access code __dl101__
+5. Read [rules](https://github.com/yandexdataschool/Practical_DL/wiki/Homeworks-and-grading-(HSE))
+
+# Announcements
+* 21.09 - for those using TF + keras in week2: if you have any problems please update your notebooks from current repository (new data reading script).
+* 06.09 - Course started
 
 # Syllabus
-- __week01__ (10.09.2018) Basics of neural networks
-  - [ ] Lecture: ML recap. Neural nets 101: backprop, intizlization, adaptive SGD
-  - [ ] Seminar: Neural networks in numpy (deadline in 10 days)
+- __week0__ Recap
+  - [ ] Lecture: Linear models, stochastic optimization, basic neural networks and backprop
+  - [ ] Seminar: Neural networks in numpy, adaptive SGD
+     - [ ] HW due: 17.09.17, 23.59.
+  - [ ] Please get bleeding edge theano+lasagne installed for the next seminar. 
+    - [Issue](https://github.com/yandexdataschool/HSE_deeplearning/issues/1)
+    - [Linux Guidelines](http://agentnet.readthedocs.io/en/latest/user/install.html)
+    - You may choose tensorflow/pytorch version if you prefer 'em
+- __week1__ Symbolic graphs
+  - [ ] Lecture: Backprop recap. Deep learning frameworks. Some philosophy. DL tricks: dropout, normalization
+  - [ ] Seminar: Symbolic graphs and basic neural networks
+     - [ ] HW due 24.09.17, 23.59
+  
+- __week2__ Deep learning for computer vision
+  - [ ] Lecture: Convolutional neural networks, data augmentation & hacks.
+  - [ ] Seminar: Convnets for CIFAR
+     - [ ] HW due 1.10.17, 23.59
+  
+- __week3__ Advanced computer vision
+  - [ ] Lecture: Computer vision beyond image classification. Segmentation, object detection, identification. Model zoo & fine-tuning
+  - [ ] Seminar: Model zoo. Siamese nets for identification.
+  
+- __week4__ Unsupervised & generative methods
+  - [ ] Lecture: Autoencoders, Generative Adversarial Networks
+  - [ ] Seminar: Generative Adversarial Networks. [hopefully] Art Style Transfer by Dmitry Ulyanov
 
-- __week02__ (17.09.2018) Deep learning stuff
-  - [ ] Lecture: An umbrella-lecture for deep learning frameworks, some philosophy, tips & tricks
-  - [ ] Seminar: Automatic gradients (pytorch | tensorflow | theano)
-   
+- __week5__ Deep learning for natural language processing 101
+  - [ ] Lecture: NLP problems and applications, bag of words, word embeddings, word2vec, text convolution.
+  - [ ] Seminar: Word embeddings. Text convolutions for salary prediction.
+  
+- __week6__ Recurrent neural networks
+  - [ ] Lecture: Simple RNN. Why BPTT isn't worth 4 letters. GRU/LSTM. Language modelling. Optimized softmax. Time series applications.
+  - [ ] Seminar: Generating laws for pitiful humans with mighty RNNs.
+
+- __week7__ Recurrent neural networks II
+  - [ ] Lecture: Sequence labeling & applications. Seq2seq & applications. Attention. Batchnorm and dropout for RNN.
+  - [ ] Seminar: Image Captioning
+
+- __week8__: Deep reinforcement learning
+  - [ ] Lecture: Reinforcement learning applications. Policy gradient. REINFORCE.
+  - [ ] Seminar: REINFORCE agent with deep neural net policy for RL problems
+  
+- __week9__: Bayesian deep learning
+  - [ ] Lecture: Bayesian vs Frequentist idea of probability. Bayesian methods around you. Variational Autoencoder. Bayesian Neural Network.
+  - [ ] Seminar: Bayesian Neural Nets; Variational autoencoders [Hopefully by Mikhail Khalman]
+ 
+
+
+# Stuff
+* [One rule to rule them all](https://github.com/yandexdataschool/HSE_deeplearning/wiki/Core:)
+* [Project rules](https://github.com/yandexdataschool/HSE_deeplearning/wiki/Course-projects)
+* [Project examples](https://github.com/yandexdataschool/HSE_deeplearning/wiki/Project-examples)
+* [Reducing lateness penalty](https://github.com/yandexdataschool/HSE_deeplearning/wiki/Back-to-the-future)
+* [Feedback form (anonymous)](https://docs.google.com/forms/u/0/d/1HaODcG3vW7PAiQOUexZAwaZzrcGtVIYbJjymhLhgLYA/edit)
 
 # Contributors & course staff
-Course materials and teaching performed by (in random order)
-- [Victor Lempitsky](http://sites.skoltech.ru/compvision/members/vilem/) - YSDA main track lectures (1-11)
-- [Victor Yurchenko](https://github.com/simflin) - intro notebooks, YSDA admin stuff
-- [Victoria Chekalina](http://github.com/sayankotor) - seminars, HSE hw checkup, admin stuff
-- [Vadim Lebedev](https://github.com/vadim-v-lebedev) - notebooks, admin stuff
-- [Dmitry Ulyanov](https://github.com/DmitryUlyanov) - notebooks on generative models & autoencoders
-- [Fedor Ratnikov](https://github.com/justheuristic/) - pytorch & nlp notebooks, some lectures
-- [Oleg Vasilev](https://github.com/Omrigan) - notebooks, technical issue resolution
-- [Arseniy Ashukha](https://github.com/ars-ashuha) - image captioning materials
-- [Mikhail Khalman](https://github.com/mihaha) - variational autoencoder materials
-
+Course materials and teaching performed by
+- [Fedor Ratnikov](https://github.com/justheuristic/) - lectures, seminars, hw checkups
+- [Oleg Vasilev](https://github.com/Omrigan) - seminars, hw checkups, technical issue resolution
+- [Arseniy Ashukha](https://github.com/ars-ashuha) - image captioning, sound processing, week7&9 lectures
+- [Dmitry Ulyanov](https://github.com/DmitryUlyanov) - generative models, week8 lecture, week12 homework assignment
+- [Mikhail Khalman](https://github.com/mihaha?tab=activity) - variational autoencoders, lecture 12
+- [Vadim Lebedev](https://github.com/vadim-v-lebedev) - week0 & week6 homeworks
